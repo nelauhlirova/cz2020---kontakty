@@ -22,7 +22,7 @@ img {
 	border-radius: 50%;
 }
 
-.jarmila, .emilie, .klotylda, .lucinda {
+.slecna {
 	border: 1px solid lightgray;
 	margin: 10px;
 	padding: 20px;
@@ -33,18 +33,35 @@ img {
 		display: flex;
 		flex-wrap: wrap;
 	}
-}
-
-@media (min-width: 540px) {
-	.jarmila, .emilie, .klotylda, .lucinda {
+	
+	.slecna {
+		display: flex;
+		text-align: left;
 		width: 46%;
 		flex-grow: 1;
+	}
+
+	h2, p {
+		padding-left: 20px;
+	}
+
+	img {
+		width: 100%;
+		max-width: 130px;
+		height: 100%;
+		max-height: 130px;
 	}
 }
 
 @media (min-width: 960px) {
-	.jarmila, .emilie, .klotylda, .lucinda {
+	.slecna {
+		display: inline-block;
 		width: 22%;
 		flex-grow: 1;
+		text-align: center;
+	}
+	
+	h2, p {
+		padding: 0;
 	}
 }
