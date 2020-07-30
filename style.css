@@ -5,6 +5,46 @@ html { box-sizing: border-box; }
 body {
 	font-family: sans-serif;
 	font-size: 14px;
+	text-align: center;
 }
 
 /* ---------------------------------------------------- */
+
+.obsah {
+	display: inline-block;
+}
+
+p {
+	margin: 0;
+}
+
+img {
+	border-radius: 50%;
+}
+
+.jarmila, .emilie, .klotylda, .lucinda {
+	border: 1px solid lightgray;
+	margin: 10px;
+	padding: 20px;
+}
+
+@media (min-width: 540px) {
+	.obsah {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media (min-width: 540px) {
+	.jarmila, .emilie, .klotylda, .lucinda {
+		width: 46%;
+		flex-grow: 1;
+	}
+}
+
+@media (min-width: 960px) {
+	.jarmila, .emilie, .klotylda, .lucinda {
+		width: 22%;
+		flex-grow: 1;
+	}
+}
